@@ -1,8 +1,0 @@
-##DEV
-redshift:
- db-name: datawarehouse
- port: 5439
- user: shiny
- password: 8cd98f00b204E9800998E
- host: 10.1.4.248
-

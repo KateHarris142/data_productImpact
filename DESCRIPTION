@@ -1,0 +1,18 @@
+Package: impactTool
+Type: Package
+Title: Relative Product Impact Rank
+Version: 0.1.0
+Author: Lee Stirling, Kathryn Harris
+Maintainer: Lee Stirling <datascience@notonthehighstreet.com>
+Description: The function impact() Takes A Vector Of Product Codes And Returns
+    Each Product's Relative Impact Score (Conversion Weighted By Daily TTV).
+License: GPL-3
+LazyData: TRUE
+Depends:
+    RMySQL,
+    RPostgreSQL,
+    data.table,
+    pool,
+    DBI,
+    yaml
+RoxygenNote: 5.0.1

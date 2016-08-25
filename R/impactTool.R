@@ -3,7 +3,7 @@
 #'
 #' @description The function impact() takes a vector of product codes and returns each product's relative impact -- a measure that reflects a product's conversion, weighted by its daily TTV.
 #'
-#' @param productCodes vector of product_codes
+#' @param productCodes vector of comma-separated product_codes (length == 1)
 #' @param dateStart date from which kpi's start being measured format yyyy-mm-dd
 #' @param dateEnd date to which kpi's stop being measured format yyyy-mm-dd
 #' @param connections creates group of connections for multiple uses

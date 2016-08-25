@@ -15,7 +15,6 @@
 #' @import data.table
 #'
 #' @examples
-#' relativeProductImpact(c(404805, 544419, 20072), '2016-08-09', '2016-08-23')
 #'
 #' @author Lee Stirling, Kathryn Harris 2016-08-24
 #'

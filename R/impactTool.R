@@ -8,7 +8,7 @@
 #' @param dateEnd date to which kpi's stop being measured format yyyy-mm-dd
 #' @param connections creates group of connections for multiple uses
 #'
-#' @return data frame containing product_codes and their relative impact
+#' @return data frame containing product_code, family, days_live, page_views, ttv, num_checkouts, conversion, ttv_per_day, impactScore, impactScoreNorm, and impact
 #'
 #' @import DBI
 #' @import RPostgreSQL
@@ -102,8 +102,6 @@ full_file2$'noCheckouts' <- data.frame(
                               )
 
 full_file <- as.data.frame(data.table::rbindlist(full_file2))
-full_file <- full_file[, c("product_code", "impactScoreNorm", "impact")]
-colnames(full_file) <- c("product_code", "normalised_impact_score", "ranked_impact_score")
 
 return(full_file)
 }

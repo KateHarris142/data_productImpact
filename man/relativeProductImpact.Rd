@@ -4,23 +4,24 @@
 \alias{relativeProductImpact}
 \title{Relative Product Impact Rank}
 \usage{
-relativeProductImpact(productCodes, dateStart, dateEnd)
+relativeProductImpact(productCodes, dateStart, dateEnd, connections)
 }
 \arguments{
-\item{productCodes}{vector of product_codes}
+\item{productCodes}{vector (length == 1) of comma-separated product_codes}
 
 \item{dateStart}{date from which kpi's start being measured format yyyy-mm-dd}
 
 \item{dateEnd}{date to which kpi's stop being measured format yyyy-mm-dd}
+
+\item{connections}{creates group of connections for multiple uses}
 }
 \value{
-data frame containing product_codes and their relative impact
+data frame containing product_code, family, days_live, page_views, ttv, num_checkouts, conversion, ttv_per_day, impactScore, impactScoreNorm, and impact
 }
 \description{
-The function impact() takes a vector of product codes and returns each product's relative impact -- a measure that reflects a product's conversion, weighted by its daily TTV.
+The function relativeProductImpact() takes a vector of comma-separated product codes and returns each product's relative impact -- basically a product's conversion weighted by its daily TTV.
 }
 \examples{
-relativeProductImpact(c(404805, 544419, 20072), '2016-08-09', '2016-08-23')
 
 }
 \author{
